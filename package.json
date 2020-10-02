@@ -1,0 +1,14 @@
+{
+  "name": "minhasaude",
+  "version": "1.0.0",
+  "description": "aplicação de controle de glicemia em js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fprestes",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
