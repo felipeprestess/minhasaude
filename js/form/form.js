@@ -2,9 +2,14 @@ function getPatientFromForm (form){
     const patient = {
         name: form.name.value,
         glucose: form.glucose.value,
-        date: getFormattedDate()
+        date: getFormattedDate(),
+        observation: getObservationsFromAnalysis()
     };
     return patient;
+}
+
+function getObservationsFromAnalysis(value) {
+
 }
 
 function getFormattedDate() {
