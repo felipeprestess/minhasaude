@@ -16,7 +16,7 @@
           <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Minha saúde </font></font><span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(atual)</font></font></span></a>
+                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Minha saúde </font></font><span class="sr-only"><p style="vertical-align: inherit;"><p style="vertical-align: inherit;">(atual)</p></p></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ligação</font></font></a>
@@ -37,16 +37,15 @@
     </nav>
     <div class="container">
         <div class="errors-invisible"></div>
-        <table class="table table-hover table-striped table-bordered table-sm" id="table-patients">
+        <table class="table table-hover table-striped table-bordered table-sm">
             <thead>
                 <tr>
                     <th scope="col">Paciente</th>
                     <th scope="col">mg/dL</th>
                     <th scope="col">Data</th>
-                    <th scope="col">Observações</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-patients">
                 <tr class="patient">
                     <th scope="row" class="info-name">Joao</th>
                     <th scope="row" class="info-glucose">395</th>
@@ -66,7 +65,7 @@
                     <input class="form-control" type="text" name="name" id="patient-name" placeholder="Digite o nome do paciente">
                  </div>
                 <div class="col-md-3">
-                    <label for="patient-glicemy">Glicose</label>
+                    <label for="patient-glicemy">mg/dL</label>
                     <input class="form-control" type="text" name="glucose" id="patient-glucose" placeholder="Digite o valor glicêmico">
                 </div>
                 <div class="col-md-3">
@@ -81,6 +80,6 @@
    
     <script src="js/cadastra-glicemia.js"></script>
     <script src="js/form/form.js"></script>
-    
+    <script src="js/remove-patient.js"></script>
 </body>
 </html>

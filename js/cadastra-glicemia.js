@@ -2,8 +2,9 @@ var table = document.querySelector("#table-patients");
 
 var form = document.querySelector("#form-patient");
 
-var button = document.querySelector("#btn-register");
-button.addEventListener("click", function(e) {
+
+var buttonRegister = document.querySelector("#btn-register");
+buttonRegister.addEventListener("click", function(e) {
     e.preventDefault();
 
     var patient = getPatientFromForm(form);
