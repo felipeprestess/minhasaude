@@ -2,6 +2,22 @@ var table = document.querySelector("#table-patients");
 
 var form = document.querySelector("#form-patient");
 
+var patients = document.querySelectorAll(".patient");
+for (let i = 0; i < patients.length; i++) {
+    const patient = patients[i];
+    var thName = patient.querySelector(".info-name");
+    var thGlucose = patient.querySelector(".info-glucose");
+    var thDate = patient.querySelector(".info-date");
+
+    const glucose = thGlucose.textContent;
+    
+    if (glucose > 126) {
+        patient.classList.add("patient-danger");
+    }
+    
+}
+
+
 
 var buttonRegister = document.querySelector("#btn-register");
 buttonRegister.addEventListener("click", function(e) {

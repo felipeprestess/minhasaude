@@ -37,7 +37,7 @@
     </nav>
     <div class="container">
         <div class="errors-invisible"></div>
-        <table class="table table-hover table-striped table-bordered table-sm">
+        <table class="table table-sm">
             <thead>
                 <tr>
                     <th scope="col">Paciente</th>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr class="patient">
                     <th scope="row" class="info-name">Marcos</th>
-                    <th scope="row" class="info-glucose">320</th>
+                    <th scope="row" class="info-glucose">120</th>
                     <th scope="row" class="info-date">03/09/2020</th>
                 </tr>
             </tbody>
@@ -68,9 +68,11 @@
                     <label for="patient-glicemy">mg/dL</label>
                     <input class="form-control" type="text" name="glucose" id="patient-glucose" placeholder="Digite o valor glicêmico">
                 </div>
-                <div class="col-md-3">
-                    <button id="btn-register" class="btn btn-primary" type="submit">Cadastrar</button>
-                </div> 
+            </div>
+            <div class="form-row">
+              <div class="col-md-3" style="padding:10px;">
+                  <button id="btn-register" class="btn btn-primary" type="submit">Cadastrar</button>
+              </div> 
             </div>
         </form>
     </div>
