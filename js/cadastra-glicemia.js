@@ -53,16 +53,16 @@ function showErrors(errors) {
 }
 
 function showMessages(value){
-    if (value < 90) {
-        buildAlert("warning", "Atenção!","Valor glicêmico muito baixo!");
+    if (value < 99) {
+        buildAlert("success", "Muito bem","Normal: Glicemia controlada.");
     }
 
-    if (value > 230) {
-        buildAlert("warning", "Atenção!","Valor glicêmico muito alto!")
+    if (value >= 100 && value <= 125) {
+        buildAlert("warning", "Atenção!","Pré-diabetes: Verificar a alimentação.")
     }
 
-    if (value > 90 && value < 200) {
-        buildAlert("success", "Muito bem!","Glicemia controlada.");
+    if (value > 126) {
+        buildAlert("danger", "Cuidado!","Diabetes: Valor glicêmico muito alto!");
     }
 }
 
