@@ -8,16 +8,10 @@ for (let i = 0; i < patients.length; i++) {
     var thName = patient.querySelector(".info-name");
     var thGlucose = patient.querySelector(".info-glucose");
     var thDate = patient.querySelector(".info-date");
-
-    const glucose = thGlucose.textContent;
-    
-    if (glucose > 126) {
-        patient.classList.add("patient-danger");
-    }
-    
+   
 }
 
-
+form.reset();
 
 var buttonRegister = document.querySelector("#btn-register");
 buttonRegister.addEventListener("click", function(e) {
@@ -33,9 +27,8 @@ buttonRegister.addEventListener("click", function(e) {
     showMessages(patient.glucose);
 
     var tr = buildTr(patient);
-    var body = table.querySelector('tbody');
-    body.appendChild(tr);
-    
+
+    table.appendChild(tr);
 });
 
 function validatePatient(patient) {

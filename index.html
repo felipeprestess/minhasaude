@@ -9,52 +9,46 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Alternar de navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Minha saúde </font></font><span class="sr-only"><p style="vertical-align: inherit;"><p style="vertical-align: inherit;">(atual)</p></p></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ligação</font></font></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desativado</font></font></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suspenso</font></font></a>
-                <div class="dropdown-menu" aria-labelledby="dropdown08">
-                  <a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Açao</font></font></a>
-                  <a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Outra ação</font></font></a>
-                  <a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Outra coisa aqui</font></font></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-    </nav>
+  <header>
+    <div class="container">
+      <h1 class="titulo">Minha saúde</h1>
+    </div>
+  </header>
     <div class="container">
         <div class="errors-invisible"></div>
-        <table class="table table-sm">
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col">Paciente</th>
                     <th scope="col">mg/dL</th>
                     <th scope="col">Data</th>
+                    <th scope="col">Observação</th>
                 </tr>
             </thead>
             <tbody id="table-patients">
                 <tr class="patient">
-                    <th scope="row" class="info-name">Joao</th>
+                    <th scope="row" class="info-name">João</th>
                     <th scope="row" class="info-glucose">395</th>
                     <th scope="row" class="info-date">20/10/2019</th>
+                    <th scope="row" class="info-observation">Diabetes</th>
                 </tr>
                 <tr class="patient">
                     <th scope="row" class="info-name">Marcos</th>
                     <th scope="row" class="info-glucose">120</th>
                     <th scope="row" class="info-date">03/09/2020</th>
+                    <th scope="row" class="info-observation">Pré-diabetes</th>
+                </tr>
+                <tr class="patient">
+                  <th scope="row" class="info-name">Letícia</th>
+                  <th scope="row" class="info-glucose">90</th>
+                  <th scope="row" class="info-date">03/09/2020</th>
+                  <th scope="row" class="info-observation">Normal</th>
+                </tr>
+                <tr class="patient">
+                  <th scope="row" class="info-name">Maria</th>
+                  <th scope="row" class="info-glucose">198</th>
+                  <th scope="row" class="info-date">03/09/2020</th>
+                  <th scope="row" class="info-observation">Diabetes</th>
                 </tr>
             </tbody>
         </table>
